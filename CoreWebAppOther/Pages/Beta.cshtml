@@ -1,0 +1,15 @@
+﻿@page
+@model BetaModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<style>
+    body {
+        background-color: @Model.Settings.BackgroundColor;
+    }
+</style>
+<div class="text-center">
+    <h1 class="display-4">BETA FEATURE</h1>
+    <h1>@Model.Settings.Message</h1>
+</div>
